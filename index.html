@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Pokemon Finder</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Pokemon Finder</h1>
+        <div id="container">
+            <form>
+                <div id="pokemon-type1">
+                    <select name="Pokemon Type 1" id="type1">
+                    </select>
+                </div>
+                <div id="pokemon-type2">
+                    <select name="Pokemon Type 2" id="type2">
+                    </select>    
+                </div>
+                <div id="show-button">
+                    <button type="button" id="btn" onclick="showPokemons();">Show Pokemons</button>
+                </div>
+            </form>
+            <table id="table-results">
+                <thead id="thead">
+                    <tr>
+                        <th>Pokemon Id</th>
+                        <th>Pokemon Image</th>
+                        <th>Pokemon Name</th>
+                        <th>Base Experience</th>
+                        <th>Weight</th>
+                        <th>Height</th>
+                    </tr>
+                </thead>
+                <tbody id="tdata">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
